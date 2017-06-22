@@ -1,0 +1,40 @@
+body {
+	font: 100% Roboto;
+	background-image: url("img/pink dust.png");
+}
+
+.container {
+	width: 100%;
+}
+
+.no-result {
+	text-align: center;
+	color: aqua;
+	height: 500px;
+}
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 40em) {
+	.no-result {
+		height: 500px;
+	}
+}
+
+.button {
+	background-color: transparent;
+	border: none;
+	color: aqua;
+	padding: 8px 82px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border: 1px solid deeppink;
+}

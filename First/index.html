@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>First task</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="mian.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="no-result">
+		<div class="vertical-align">
+			<h1>Hello!</h1>
+			<p>Please click on any button...</p>
+			<p>
+				<button class="button" onclick="myFunction()" id="firstButton" value="1">ClickMe</button>
+			</p>
+			<p>
+				<button class="button " onclick="myFunction()" id="secondButton" value="2">ClickMe</button>
+			</p>
+			<p>
+				<button class="button " onclick="myFunction()" id="thirdButton" value="3">ClickMe</button>
+			</p>
+		</div>
+	</div>
+	<script>
+	  var count = 0;
+	  function myFunction() {
+		  var firstButton = document.getElementById("firstButton");
+		  var secondButton = document.getElementById("secondButton");
+		  var thirdButton = document.getElementById("thirdButton");
+		  var array = [firstButton, secondButton, thirdButton];
+		  if((firstButton.onclick) || (secondButton.onclick) || (thirdButton.onclick)) {
+			  for(var j = 0; j < 3; j++) {
+				  switch(count) {
+					  case 0:
+						  array[j].textContent = j + 1;
+						  break;
+					  case 1:
+						  firstButton.textContent =2;
+						  secondButton.textContent =3;
+						  thirdButton.textContent =1;
+						  break;
+					  case 2:
+							  firstButton.textContent =3;
+							  secondButton.textContent =1;
+							  thirdButton.textContent =2;
+						  break;
+				  }
+			  }
+			  count++;
+			  if(count > 2) {
+				  count = 0;
+			  }
+		  }
+	  }
+	</script>
+</div>
+</body>
+</html>

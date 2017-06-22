@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="topPanel">
+		<button class="button button_btn1">Добавить</button>
+		<button class="button button_btn2">Обновить</button>
+		<input type="search" class="searchPanel" placeholder="Поиск по сайту">
+		<button class="searchBotton"><img src="img/Search_50px.png" class="imagine"></button>
+		<div class="lineBottom"></div>
+	</div>
+</div>
+
+<div id="cal">
+	<div class="header">
+		<span><input type="button" class="leftRightbuuton leftButton" onclick="mothFunctionLeft()" id="leftClickButton"></span>
+		<span class="left hook"></span>
+		<span><b id="nameMonth"></b></span>
+		<span class="right hook" id="#"></span>
+		<span><input type="button" class="leftRightbuuton rightButton" onclick="montFunctionRight()" id="rightClickButton"></span>
+		<span><input type="button" class="leftRightbuuton nowButton" onclick="nowButtonClick()" id="nowButton" value="Сегодня"></span>
+	</div>
+	<div id="calendar"></div>
+</div>
+
+<script src="mian.js"></script>
+</body>
+</html>
